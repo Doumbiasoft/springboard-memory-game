@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Memory Game!</title>
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body>
+    <div class="logocontainer">
+      <img src="images/springboard.png" width="300" alt="logo" />
+    </div>
+    <div class="form">
+ 
+      <div class="container">
+     
+        <div id="sides">
+          <div id="left">
+            <h1>Memory Game!</h1>
+            <br />
+            <div class="details">
+              <p class="flips" >
+             <h2 style="color: green">BEST SCORE : <span id="LastBestScore">0</span></h2>
+              </p>
+              <br />
+              <p class="flips" >
+              <h2 style="color: orange">SCORE : <span id="Score">0</span></h2>  
+              </p>
+              <div id="divStartgame">
+                <br /><br />
+                <h1>START GAME!</h1>
+                <br /><br />
+                <button id="btStart">START GAME</button>
+      
+              </div>
+              <div class="hide" id="divGameover">
+                <br /><br />
+                <h1>GAME OVER !</h1>
+                <br />
+                <h2>YOUR SCORE IS : <span style="color: orange;" id="finalScore">0</span></h2>
+                <br />
+                <button id="btReset">NEW GAME</button>
+      
+              </div>
+            </div>
+            <p></p>
+            
+      
+          </div>
+          <div id="right">
+            <div id="divGame" class="hide">
+              <div id="game">
+                <div class="card" data-type="python">
+                  <img class="front-face" src="icons/python.png" alt="python" />
+                  <img
+                    class="back-face"
+                    src="images/icon-springboard-logo.png"
+                    alt="Memory Card"
+                  />
+                </div>
+      
+                <div class="card" data-type="python">
+                  <img class="front-face" src="icons/python.png" alt="python" />
+                  <img
+                    class="back-face"
+                    src="images/icon-springboard-logo.png"
+                    alt="Memory Card"
+                  />
+                </div>
+      
+                <div class="card" data-type="react">
+                  <img class="front-face" src="icons/react.png" alt="react" />
+                  <img
+                    class="back-face"
+                    src="images/icon-springboard-logo.png"
+                    alt="Memory Card"
+                  />
+                </div>
+      
+                <div class="card" data-type="react">
+                  <img class="front-face" src="icons/react.png" alt="react" />
+                  <img
+                    class="back-face"
+                    src="images/icon-springboard-logo.png"
+                    alt="Memory Card"
+                  />
+                </div>
+      
+                <div class="card" data-type="java">
+                  <img class="front-face" src="icons/java.png" alt="java" />
+                  <img
+                    class="back-face"
+                    src="images/icon-springboard-logo.png"
+                    alt="Memory Card"
+                  />
+                </div>
+      
+                <div class="card" data-type="java">
+                  <img class="front-face" src="icons/java.png" alt="java" />
+                  <img
+                    class="back-face"
+                    src="images/icon-springboard-logo.png"
+                    alt="Memory Card"
+                  />
+                </div>
+      
+                <div class="card" data-type="javascript">
+                  <img
+                    class="front-face"
+                    src="icons/javascript.png"
+                    alt="javascript"
+                  />
+                  <img
+                    class="back-face"
+                    src="images/icon-springboard-logo.png"
+                    alt="Memory Card"
+                  />
+                </div>
+      
+                <div class="card" data-type="javascript">
+                  <img
+                    class="front-face"
+                    src="icons/javascript.png"
+                    alt="javascript"
+                  />
+                  <img
+                    class="back-face"
+                    src="images/icon-springboard-logo.png"
+                    alt="Memory Card"
+                  />
+                </div>
+      
+                <div class="card" data-type="nodejs">
+                  <img class="front-face" src="icons/node-js.png" alt="nodejs" />
+                  <img
+                    class="back-face"
+                    src="images/icon-springboard-logo.png"
+                    alt="Memory Card"
+                  />
+                </div>
+      
+                <div class="card" data-type="nodejs">
+                  <img class="front-face" src="icons/node-js.png" alt="nodejs" />
+                  <img
+                    class="back-face"
+                    src="images/icon-springboard-logo.png"
+                    alt="Memory Card"
+                  />
+                </div>
+      
+                <div class="card" data-type="netframework">
+                  <img
+                    class="front-face"
+                    src="icons/netframework.png"
+                    alt="netframework"
+                  />
+                  <img
+                    class="back-face"
+                    src="images/icon-springboard-logo.png"
+                    alt="Memory Card"
+                  />
+                </div>
+      
+                <div class="card" data-type="netframework">
+                  <img
+                    class="front-face"
+                    src="icons/netframework.png"
+                    alt="netframework"
+                  />
+                  <img
+                    class="back-face"
+                    src="images/icon-springboard-logo.png"
+                    alt="Memory Card"
+                  />
+                </div>
+                <div class="card" data-type="flutter">
+                  <img
+                    class="front-face"
+                    src="icons/flutter.png"
+                    alt="netframework"
+                  />
+                  <img
+                    class="back-face"
+                    src="images/icon-springboard-logo.png"
+                    alt="Memory Card"
+                  />
+                </div>
+                <div class="card" data-type="flutter">
+                  <img
+                    class="front-face"
+                    src="icons/flutter.png"
+                    alt="netframework"
+                  />
+                  <img
+                    class="back-face"
+                    src="images/icon-springboard-logo.png"
+                    alt="Memory Card"
+                  />
+                </div>
+                <div class="card" data-type="angularjs">
+                  <img
+                    class="front-face"
+                    src="icons/angularjs.png"
+                    alt="netframework"
+                  />
+                  <img
+                    class="back-face"
+                    src="images/icon-springboard-logo.png"
+                    alt="Memory Card"
+                  />
+                </div>
+                <div class="card" data-type="angularjs">
+                  <img
+                    class="front-face"
+                    src="icons/angularjs.png"
+                    alt="netframework"
+                  />
+                  <img
+                    class="back-face"
+                    src="images/icon-springboard-logo.png"
+                    alt="Memory Card"
+                  />
+                </div>
+                <div class="card" data-type="vuejs">
+                  <img
+                    class="front-face"
+                    src="icons/vuejs.png"
+                    alt="netframework"
+                  />
+                  <img
+                    class="back-face"
+                    src="images/icon-springboard-logo.png"
+                    alt="Memory Card"
+                  />
+                </div>
+                <div class="card" data-type="vuejs">
+                  <img
+                    class="front-face"
+                    src="icons/vuejs.png"
+                    alt="netframework"
+                  />
+                  <img
+                    class="back-face"
+                    src="images/icon-springboard-logo.png"
+                    alt="Memory Card"
+                  />
+                </div>
+                <div class="card" data-type="redux">
+                  <img
+                    class="front-face"
+                    src="icons/redux.png"
+                    alt="netframework"
+                  />
+                  <img
+                    class="back-face"
+                    src="images/icon-springboard-logo.png"
+                    alt="Memory Card"
+                  />
+                </div>
+                <div class="card" data-type="redux">
+                  <img
+                    class="front-face"
+                    src="icons/redux.png"
+                    alt="netframework"
+                  />
+                  <img
+                    class="back-face"
+                    src="images/icon-springboard-logo.png"
+                    alt="Memory Card"
+                  />
+                </div>
+              </div>
+      
+          </div>
+        </div>
+        
+      </div>
+    
+    </div>
+
+    <div class="container" style="background-color: #f1f1f1"></div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
+

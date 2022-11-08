@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 15px;
+}
+.hide {
+  display: none;
+  transition: color 500ms;
+}
+.show {
+  display: inline-block;
+  transition: color 500ms;
+}
+#sides {
+  margin: 0;
+}
+#left {
+  float: left;
+  width: 25%;
+}
+#right {
+  float: left;
+  width: 75%;
+}
+
+.logocontainer {
+  text-align: left;
+  margin: 24px 0px 12px 10px;
+}
+
+#game {
+  width: 600px;
+  height: 600px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.card {
+  height: calc(100% / 5 - 5px);
+  width: calc(100% / 5 - 5px);
+  margin: 10px;
+  position: relative;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+.card:active {
+  transform: scale(0.97);
+  transition: transform 0.2s;
+}
+.card:hover {
+  cursor: pointer;
+}
+.card.flip {
+  transform: rotateY(180deg);
+}
+.card.shake {
+  animation: shake 0.45s ease-in-out;
+}
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-13px);
+  }
+  40% {
+    transform: translateX(13px);
+  }
+  60% {
+    transform: translateX(-8px);
+  }
+  80% {
+    transform: translateX(8px);
+  }
+}
+.front-face {
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  position: absolute;
+  border-radius: 5px;
+  background: #242424;
+  -webkit-backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+.back-face {
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  position: absolute;
+  border-radius: 5px;
+  background: #404040;
+  -webkit-backface-visibility: hidden;
+}
+
+.details button {
+  cursor: pointer;
+  font-size: 14px;
+  color: #4b4b4b;
+  border-radius: 4px;
+  padding: 4px 11px;
+  background: #fff;
+  border: 2px solid #4b4b4b;
+  transition: 0.3s ease;
+  position: relative;
+}
+.details button:hover {
+  color: #fff;
+  background: #4b4b4b;
+}
