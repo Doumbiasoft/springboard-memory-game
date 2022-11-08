@@ -5,7 +5,7 @@ const divGameover = document.querySelector("#divGameover");
 const btReset = document.querySelector("#btReset");
 const bestScoreText = document.querySelector("#LastBestScore");
 const finalScore = document.querySelector("#finalScore");
-const Scoretext = document.querySelector("#Score");
+const scoretext = document.querySelector("#Score");
 
 let IsFlipped = false;
 let lock = false;
@@ -31,7 +31,7 @@ function flipCard() {
 
   this.classList.add("flip");
   score++;
-  Scoretext.innerText = score;
+  scoretext.innerText = score;
 
   if (!IsFlipped) {
     IsFlipped = true;
